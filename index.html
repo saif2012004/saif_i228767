@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h2>Weather App</h2>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="tables.html">Tables</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <div class="profile-image">
+          <img
+            src="https://tse1.mm.bing.net/th?id=OIP.zyQjyn_QGS3wP3O2pk6T7gHaF3&pid=Api&P=0&h=220"
+            alt="Profile Image"
+          />
+        </div>
+
+        <div class="search-bar">
+          <input type="text" id="city" placeholder="Enter city name" />
+          <button id="get-weather">Get Weather</button>
+        </div>
+
+        <div class="weather-widget">
+          <h3>Detailed Weather Information</h3>
+          <div id="weather-details"></div>
+        </div>
+
+        <div class="charts-container">
+          <div class="cls"><canvas id="barChart"></canvas></div>
+          <canvas id="doughnutChart"></canvas>
+          <canvas id="lineChart"></canvas>
+        </div>
+      </main>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

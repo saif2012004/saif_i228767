@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+nav {
+  width: 200px;
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  min-height: 100vh;
+  position: fixed;
+}
+
+nav h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 20px 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  width: calc(100% - 240px);
+  margin-left: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.profile-image {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.profile-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  /* object-fit: cover; */
+  border: 2px solid #333;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.weather-widget {
+  background: gray;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 60%;
+  max-width: 500px;
+}
+
+.charts-container {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 0px;
+  width: 100%;
+}
+#doughnutChart {
+  margin: 1px;
+  width: 400px;
+
+  border: 2px solid black;
+}
+#lineChart {
+  margin: 1px;
+  width: 400px;
+  border: 2px solid black;
+}
+#barChart {
+  margin: 1px;
+  width: 400px;
+
+  border: 2px solid black;
+}
+
+.charts-container canvas {
+  width: 400px !important;
+  height: 300px !important;
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .charts-container {
+    flex-direction: column;
+  }
+
+  /* .charts-container canvas {
+    width: 30% !important;
+    margin-bottom: 20px;
+  } */
+
+  .weather-widget {
+    width: 90%;
+  }
+}
+
+.table-section {
+  background: lightgoldenrodyellow;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#pagination-controls {
+  margin-top: 20px;
+  text-align: center;
+}

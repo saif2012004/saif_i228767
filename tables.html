@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast Table</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h2>Weather App</h2>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="tables.html">Tables</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Temperature</th>
+              <th>Humidity</th>
+              <th>Wind Speed</th>
+              <th>Cloudiness</th>
+            </tr>
+          </thead>
+          <tbody id="weather-table-body"></tbody>
+        </table>
+        <div>
+          <button id="prev-page">Previous</button>
+          <span id="page-number">Page 1</span>
+          <button id="next-page">Next</button>
+        </div>
+
+        <div class="chatbot-widget">
+          <h3>Chat with Weather Bot</h3>
+          <div id="chatbox"></div>
+          <input type="text" id="user-input" placeholder="Ask something..." />
+          <button id="send-chat">Send</button>
+        </div>
+      </main>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
